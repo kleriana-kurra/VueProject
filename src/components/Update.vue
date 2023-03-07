@@ -1,10 +1,13 @@
 <template>
-  <h1>Welcome to our community💜!</h1>
+  <Header/>
+  <h1>Hello User, Welcome to update Page</h1>
 </template>
 
 <script>
+import Header from "@/components/Header.vue";
 export default {
-  name: 'HomePage',
+  name: 'UpdatePage',
+  components: { Header },
   mounted() {
     let user = localStorage.getItem("user-info");
     if (!user) {
